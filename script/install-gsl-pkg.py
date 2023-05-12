@@ -29,9 +29,9 @@ defBuildFolder = './cmake-pkg-install'
 
 def cmake( opt, arguments ):
     """Perform CMake command."""
-    commandline = "cmake {}".format( arguments )
+    commandline = f"cmake {arguments}"
     if not opt.quiet:
-        print( "{}".format( commandline ) )
+        print(f"{commandline}")
     os.system( commandline )
 
 def installGslLitePackage( opt ):

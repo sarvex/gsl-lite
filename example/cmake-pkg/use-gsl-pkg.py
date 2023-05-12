@@ -42,16 +42,16 @@ class cd:
 
 def cmake( opt, arguments ):
     """Perform CMake command."""
-    commandline = "cmake {}".format( arguments )
+    commandline = f"cmake {arguments}"
     if not opt.quiet:
-        print( "{}".format( commandline ) )
+        print(f"{commandline}")
     os.system( commandline )
 
 def ctest( opt, arguments ):
     """Perform CTest command."""
-    commandline = "ctest {}".format( arguments )
+    commandline = f"ctest {arguments}"
     if not opt.quiet:
-        print( "{}".format( commandline ) )
+        print(f"{commandline}")
     os.system( commandline )
 
 def  useGslLitePackage( opt ):
